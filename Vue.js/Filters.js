@@ -139,3 +139,17 @@ Vue.filter('extenso', function (value) {
   return null
 
 })
+
+Vue.filter('money', function (value) {
+  if (!value) {
+    var value = 0
+  }
+
+  var parsedValue = parseFloat(value)
+  var value = parsedValue.toFixed(2).split('.');
+
+  value[0] = value[0].split(/(?=(?:...)*$)/).join('.');
+
+  return 'R$ ' + value.join(',')
+  // return value.join(',');
+})
