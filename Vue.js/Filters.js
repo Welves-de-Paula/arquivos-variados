@@ -140,7 +140,7 @@ Vue.filter('extenso', function (value) {
 
 })
 
-Vue.filter('money', function (value) {
+Vue.filter('moneyBr', function (value) {
   if (!value) {
     var value = 0
   }
