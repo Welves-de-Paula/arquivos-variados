@@ -1,6 +1,23 @@
-sudo apt update
-sudo apt install php-cli unzip
-cd ~
+
+
+<p align="center"><img width="300" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"></p>
+
+
+## Configuração linux  para desenvolvimento web
+
+ 
+ 
+
+ ### Preparação do sistema
+* sudo apt update (Baixar aualização do sistema)
+* sudo apt upgrade (Instalar aualização do sistema)
+
+************************************************************************
+### Instalar as Dependencias do PHP
+* sudo apt install php-cli unzip
+*************************************************************************
+
+ cd ~
 curl -sS https://getcomposer.org/installer -o composer-setup.php
 HASH=`curl -sS https://composer.github.io/installer.sig`
 echo $HASH
