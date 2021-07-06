@@ -9,8 +9,17 @@
  
 
  ### Preparação do sistema
-* sudo apt update (Baixar aualização do sistema)
-* sudo apt upgrade (Instalar aualização do sistema)
+*  Baixar aualização do sistema
+```bash
+sudo apt update 
+```
+* Instalar aualização do sistema
+```bash
+sudo apt upgrade
+```
+
+
+
 
 ************************************************************************
 ### Instalar as Dependencias do PHP
