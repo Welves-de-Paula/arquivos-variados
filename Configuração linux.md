@@ -23,30 +23,58 @@ sudo apt upgrade
 
 ************************************************************************
 ### Instalar as Dependencias do PHP
-* sudo apt install php-cli unzip
- 
+```bash
+sudo apt install php-cli unzip
+ ```
+
 
 ************************************************************************
 ### Instalar Git
-* sudo apt install git
+```bash
+ sudo apt install git
+ ```
 *************************************************************************
 
  ### Instalar Node.Jd
-* curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-* sudo apt install -y nodejs
-* sudo npm install -g npm
+```bash
+ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+```
+```bash
+ sudo apt install -y nodejs
+ ```
+ ```bash
+ sudo npm install -g npm
+ ```
 *************************************************************************
 
 ### Instalar Composer
+```bash
+ cd ~
+  ```
 
-* cd ~
-* sudo curl -sS https://getcomposer.org/installer -o composer-setup.php
-* HASH=`curl -sS https://composer.github.io/installer.sig`
-* echo $HASH
-* php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+ ```bash
 
-* sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-* composer
+ sudo curl -sS https://getcomposer.org/installer -o composer-setup.php
+   ```
+
+ ```bash
+
+ HASH=`curl -sS https://composer.github.io/installer.sig`
+   ```
+
+ echo $HASH
+```bash
+ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+ ```
+
+```bash
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+ ```
+
+```bash
+composer 
+```
+
 
 *************************************************************************
 
