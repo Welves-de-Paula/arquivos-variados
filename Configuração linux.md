@@ -35,7 +35,7 @@ sudo apt install php-cli unzip
  ```
 *************************************************************************
 
- ### Instalar Node.Jd
+ ### Instalar Node.Js
 ```bash
  curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 ```
@@ -78,32 +78,64 @@ composer
 
 *************************************************************************
 
+### Instalar Vue.Js
+```bash
+
 npm install -g @vue/cli
+```
 
 
 
+*************************************************************************
+### Instalar  Apache
 
+```bash
 
 sudo apt install apache2
+```
 
-
+*************************************************************************
+### Instalar  e Configrar o MySql e o PhpMyAdmin
+```bash
 sudo apt install mysql-server
+```
 
 
+```bash
 sudo apt install php libapache2-mod-php php-mysql
-
-
+```
+```bash
 sudo mysql
-SELECT user,authentication_string,plugin,host FROM mysql.user;
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
-FLUSH PRIVILEGES;
-SELECT user,authentication_string,plugin,host FROM mysql.user;
-exit
-mysql -u root -p
+```
 
+```bash
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+```
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+```
+
+```bash
+
+FLUSH PRIVILEGES;
+```
+
+```bash
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+```
+```bash
+exit
+```
+
+```bash
+
+mysql -u root -p
+```
+
+```bash
 
 sudo apt install phpmyadmin
-
+```
 
 
 
