@@ -1,6 +1,7 @@
 
 
 <p align="center"><img width="300" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"></p>
+<p align="center"><img width="300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/1920px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png"></p>
 
 
 ## Configuração linux  para desenvolvimento web
