@@ -53,19 +53,16 @@ sudo apt install php-cli unzip
  cd ~
   ```
 
- ```bash
-
- sudo curl -sS https://getcomposer.org/installer -o composer-setup.php
-   ```
-
- ```bash
-
- HASH=`curl -sS https://composer.github.io/installer.sig`
-   ```
 ```bash
+ sudo curl -sS https://getcomposer.org/installer -o composer-setup.php
+```
 
+```bash
+ HASH=`curl -sS https://composer.github.io/installer.sig`
+```
+```bash
  echo $HASH
-    ```
+```
 
 ```bash
  php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
@@ -84,26 +81,19 @@ composer
 
 ### Instalar Vue.Js
 ```bash
-
-npm install -g @vue/cli
+sudo npm install -g @vue/cli
 ```
-
-
-
 *************************************************************************
 ### Instalar  Apache
 
 ```bash
-
 sudo apt install apache2
 ```
-
 *************************************************************************
 ### Instalar  e Configrar o MySql e o PhpMyAdmin
 ```bash
 sudo apt install mysql-server
 ```
-
 
 ```bash
 sudo apt install php libapache2-mod-php php-mysql
@@ -115,29 +105,28 @@ sudo mysql
 ```bash
 SELECT user,authentication_string,plugin,host FROM mysql.user;
 ```
+
 ```bash
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
 ```
 
 ```bash
-
 FLUSH PRIVILEGES;
 ```
 
 ```bash
 SELECT user,authentication_string,plugin,host FROM mysql.user;
 ```
+
 ```bash
 exit
 ```
 
 ```bash
-
 mysql -u root -p
 ```
 
 ```bash
-
 sudo apt install phpmyadmin
 ```
 
