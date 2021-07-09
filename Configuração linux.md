@@ -132,4 +132,11 @@ sudo apt install phpmyadmin
 
 
 
+ sudo add-apt-repository ppa:ondrej/php
+ 
+ 
+ git config --global user.name "Fulano de Tal"
+$ git config --global user.email fulanodetal@exemplo.pt
 
+
+reboot
