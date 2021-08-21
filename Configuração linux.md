@@ -28,12 +28,6 @@ sudo apt upgrade
 sudo apt install php-cli unzip
  ```
 
-
-************************************************************************
-### Instalar Git
-```bash
- sudo apt install git
- ```
 *************************************************************************
 
  ### Instalar Node.Js
@@ -134,9 +128,29 @@ sudo apt install phpmyadmin
 
  sudo add-apt-repository ppa:ondrej/php
  
+
+************************************************************************
+### Instalação e Configuração GIT
+
+* instalar o GIT
+```bash
+ sudo apt install git
+ ```
  
- git config --global user.name "Fulano de Tal"
-$ git config --global user.email fulanodetal@exemplo.pt
+ * Configura usuário git de forma global
+```bash
+git config --global user.name "Fulano de Tal"
+```
+
+```bash
+ git config --global user.email fulanodetal@exemplo.pt
+ ```
+
+************************************************************************
+### Reiniciar o computador para concluir a configuração 
+
+```bash
+ reboot
+ ```
 
 
-reboot
