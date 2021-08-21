@@ -6,23 +6,20 @@
 
 ## Configuração linux  para desenvolvimento web
 
- 
- 
-
  ### Preparação do sistema
+ 
 *  Baixar aualização do sistema
 ```bash
 sudo apt update 
 ```
+
 * Instalar aualização do sistema
 ```bash
 sudo apt upgrade
 ```
 
-
-
-
 ************************************************************************
+
 ### Instalar as Dependencias do PHP
 ```bash
 sudo apt install php-cli unzip
