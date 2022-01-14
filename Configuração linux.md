@@ -18,13 +18,16 @@
 ************************************************************************
 ### Instalar as Dependencias do PHP
 ```bash
+ sudo add-apt-repository ppa:ondrej/php
+```
+```bash
   sudo apt install php-cli unzip
  ```
 
 *************************************************************************
 ### Instalar Node.Js
 ```bash
-  curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+  curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 ```
 
 ```bash
@@ -143,4 +146,3 @@
 ```
 
 
- sudo add-apt-repository ppa:ondrej/php
