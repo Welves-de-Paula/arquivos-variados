@@ -1,0 +1,4 @@
+ netsh advfirewall firewall add rule name="Allowing LAN connections" dir=in action=allow protocol=TCP localport=8080
+
+   netsh interface portproxy add v4tov4 listenport=%%A listenaddress=0.0.0.0 connectport=%%A connectaddress=172.28.139.76
+netsh interface portproxy reset
