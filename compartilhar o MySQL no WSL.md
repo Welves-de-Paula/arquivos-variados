@@ -5,7 +5,7 @@
 ### Abrir porta 3306 no WSL
 
 ```bash
-    netsh advfirewall firewall add rule name="Allowing LAN connections" dir=in action=allow protocol=TCP localport=3306
+netsh advfirewall firewall add rule name="Allowing LAN connections" dir=in action=allow protocol=TCP localport=3306
 
 ```
 
@@ -36,6 +36,7 @@ Comente a linha `bind-address` e adicione a nova configuração:
 
 ```ini
 #bind-address = 127.0.0.1
+
 bind-address = 0.0.0.0
 ```
 
