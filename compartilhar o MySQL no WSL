@@ -1,13 +1,12 @@
----
-
-# Configuração do MySQL no WSL
+## Configuração do MySQL no WSL
 
 ## 1. Configurar Windows
 
 ### Abrir porta 3306 no WSL
 
 ```bash
-netsh advfirewall firewall add rule name="Allowing LAN connections" dir=in action=allow protocol=TCP localport=3306
+    netsh advfirewall firewall add rule name="Allowing LAN connections" dir=in action=allow protocol=TCP localport=3306
+
 ```
 
 ### Configurar proxy de porta
@@ -21,7 +20,7 @@ netsh interface portproxy add v4tov4 listenport=3306 listenaddress=0.0.0.0 conne
 ## 2. Criar usuário com permissão ao banco
 
 ```sql
-CREATE USER 'root'@'%' IDENTIFIED BY 'password'; 
+CREATE USER 'root'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
 ```
 
@@ -45,5 +44,3 @@ bind-address = 0.0.0.0
 ```bash
 sudo service mysql restart
 ```
-
----
