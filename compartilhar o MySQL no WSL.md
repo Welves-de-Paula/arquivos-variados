@@ -20,7 +20,7 @@ netsh interface portproxy add v4tov4 listenport=3306 listenaddress=0.0.0.0 conne
 ## 2. Criar usuário com permissão ao banco
 
 ```sql
-CREATE USER 'root'@'%' IDENTIFIED BY 'password';
+CREATE USER 'ze'@'%' IDENTIFIED BY 'senha1234';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
 ```
 
