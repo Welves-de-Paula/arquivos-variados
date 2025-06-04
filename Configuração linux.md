@@ -28,7 +28,7 @@
 *************************************************************************
 ### Instalar Node.Js
 ```bash
-  curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+  curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 ```
 
 ```bash
